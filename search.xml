@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>post</title>
-    <url>/2020/02/06/web/framework/test/</url>
+    <url>/web/framework/web/framework/test/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>web</category>
@@ -11,12 +11,12 @@
   </entry>
   <entry>
     <title>help</title>
-    <url>/2020/02/06/help/</url>
+    <url>/uncategorized/help/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>我的博客</title>
-    <url>/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <url>/web%E5%89%8D%E7%AB%AF/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[]]></content>
       <categories>
         <category>web前端</category>
