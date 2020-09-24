@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dxshelley.github.io/"/>
-  <updated>2020-02-06T09:53:32.759Z</updated>
+  <updated>2020-09-24T02:01:46.749Z</updated>
   <id>https://dxshelley.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试git</title>
+    <link href="https://dxshelley.github.io/uncategorized/%E6%B5%8B%E8%AF%95git/"/>
+    <id>https://dxshelley.github.io/uncategorized/%E6%B5%8B%E8%AF%95git/</id>
+    <published>2020-09-24T01:55:40.000Z</published>
+    <updated>2020-09-24T02:01:46.749Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;测试git&quot;&gt;&lt;a href=&quot;#测试git&quot; class=&quot;headerlink&quot; title=&quot;测试git&quot;&gt;&lt;/a&gt;测试git&lt;/h1&gt;&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>post</title>
