@@ -22,30 +22,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我的博客</title>
-    <url>/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>123</p>
-]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>tag4</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>post</title>
-    <url>/2020/02/06/web/framework/test/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>web</category>
-        <category>framework</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>npm配置与nodejs安装</title>
     <url>/2021/12/04/npm-and-nodejs/</url>
     <content><![CDATA[<h1 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h1><h1 id="npm-（Node-Packaged-Modules）"><a href="#npm-（Node-Packaged-Modules）" class="headerlink" title="npm （Node Packaged Modules）"></a>npm （Node Packaged Modules）</h1><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><h3 id="npm从以下来源获取配置值，按优先级排序"><a href="#npm从以下来源获取配置值，按优先级排序" class="headerlink" title="npm从以下来源获取配置值，按优先级排序"></a>npm从以下来源获取配置值，按优先级排序</h3><h5 id="命令行标记"><a href="#命令行标记" class="headerlink" title="命令行标记"></a>命令行标记</h5><p>在命令行上放置<code>--foo bar</code>设置<code>foo</code>配置参数为<code>bar</code>。 一个 <code>--</code> 参数(argument)告诉cli解析器停止读取flags.一个 在命令行结尾的<code>--flag</code>参数(parameter)的值将会是<code>true</code>.</p>
@@ -102,6 +78,30 @@
       <tags>
         <tag>nodejs</tag>
         <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的博客</title>
+    <url>/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>123</p>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>tag4</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>post</title>
+    <url>/2020/02/06/web/framework/test/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>web</category>
+        <category>framework</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>
