@@ -9,19 +9,6 @@
       </tags>
   </entry>
   <entry>
-    <title>测试git</title>
-    <url>/2020/09/24/%E6%B5%8B%E8%AF%95git/</url>
-    <content><![CDATA[<h1 id="测试git"><a href="#测试git" class="headerlink" title="测试git"></a>测试git</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
-<li>实现git普通基本操作</li>
-<li>实现git分支创建、合并和冲突解决</li>
-<li>能规范使用git用于版本控制和发布</li>
-</ul>
-<h2 id="git基本概念"><a href="#git基本概念" class="headerlink" title="git基本概念"></a>git基本概念</h2><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2>]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>npm配置与nodejs安装</title>
     <url>/2021/12/04/npm-and-nodejs/</url>
     <content><![CDATA[<h1 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h1><h1 id="npm-（Node-Packaged-Modules）"><a href="#npm-（Node-Packaged-Modules）" class="headerlink" title="npm （Node Packaged Modules）"></a>npm （Node Packaged Modules）</h1><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><h3 id="npm从以下来源获取配置值，按优先级排序"><a href="#npm从以下来源获取配置值，按优先级排序" class="headerlink" title="npm从以下来源获取配置值，按优先级排序"></a>npm从以下来源获取配置值，按优先级排序</h3><h5 id="命令行标记"><a href="#命令行标记" class="headerlink" title="命令行标记"></a>命令行标记</h5><p>在命令行上放置<code>--foo bar</code>设置<code>foo</code>配置参数为<code>bar</code>。 一个 <code>--</code> 参数(argument)告诉cli解析器停止读取flags.一个 在命令行结尾的<code>--flag</code>参数(parameter)的值将会是<code>true</code>.</p>
@@ -90,6 +77,19 @@
       </categories>
       <tags>
         <tag>tag4</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试git</title>
+    <url>/2020/09/24/%E6%B5%8B%E8%AF%95git/</url>
+    <content><![CDATA[<h1 id="测试git"><a href="#测试git" class="headerlink" title="测试git"></a>测试git</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+<li>实现git普通基本操作</li>
+<li>实现git分支创建、合并和冲突解决</li>
+<li>能规范使用git用于版本控制和发布</li>
+</ul>
+<h2 id="git基本概念"><a href="#git基本概念" class="headerlink" title="git基本概念"></a>git基本概念</h2><h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2>]]></content>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
