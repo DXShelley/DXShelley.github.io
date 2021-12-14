@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dxshelley.github.io/"/>
-  <updated>2021-12-14T13:43:35.269Z</updated>
+  <updated>2021-12-14T14:32:30.038Z</updated>
   <id>https://dxshelley.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm配置与nodejs安装</title>
+    <link href="https://dxshelley.github.io/2021/12/04/npm-and-nodejs/"/>
+    <id>https://dxshelley.github.io/2021/12/04/npm-and-nodejs/</id>
+    <published>2021-12-04T14:28:49.000Z</published>
+    <updated>2021-12-14T14:32:30.038Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;nodejs&quot;&gt;&lt;a href=&quot;#nodejs&quot; class=&quot;headerlink&quot; title=&quot;nodejs&quot;&gt;&lt;/a&gt;nodejs&lt;/h1&gt;&lt;h1 id=&quot;npm-（Node-Packaged-Modules）&quot;&gt;&lt;a href=&quot;#npm-（Node-
+      
+    
+    </summary>
+    
+    
+      <category term="web前端" scheme="https://dxshelley.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="js" scheme="https://dxshelley.github.io/categories/web%E5%89%8D%E7%AB%AF/js/"/>
+    
+    
+      <category term="nodejs" scheme="https://dxshelley.github.io/tags/nodejs/"/>
+    
+      <category term="npm" scheme="https://dxshelley.github.io/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>测试git</title>

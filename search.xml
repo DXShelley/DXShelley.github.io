@@ -45,4 +45,63 @@
         <tag>测试</tag>
       </tags>
   </entry>
+  <entry>
+    <title>npm配置与nodejs安装</title>
+    <url>/2021/12/04/npm-and-nodejs/</url>
+    <content><![CDATA[<h1 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h1><h1 id="npm-（Node-Packaged-Modules）"><a href="#npm-（Node-Packaged-Modules）" class="headerlink" title="npm （Node Packaged Modules）"></a>npm （Node Packaged Modules）</h1><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><h3 id="npm从以下来源获取配置值，按优先级排序"><a href="#npm从以下来源获取配置值，按优先级排序" class="headerlink" title="npm从以下来源获取配置值，按优先级排序"></a>npm从以下来源获取配置值，按优先级排序</h3><h5 id="命令行标记"><a href="#命令行标记" class="headerlink" title="命令行标记"></a>命令行标记</h5><p>在命令行上放置<code>--foo bar</code>设置<code>foo</code>配置参数为<code>bar</code>。 一个 <code>--</code> 参数(argument)告诉cli解析器停止读取flags.一个 在命令行结尾的<code>--flag</code>参数(parameter)的值将会是<code>true</code>.</p>
+<h5 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h5><p>任何以<code>npm_config_</code>开始的环境变量都会作为配置参数解读。在环境里设置<code>npm_config_foo=bar</code>将会设置<code>foo</code>配置参数为<code>bar</code>。任何没有值的环境配置将会默认为<code>true</code>。配置值是不区分大小写的，所以<code>NPM_CONFIG_FOO=bar</code>的结果一样</p>
+<h3 id="npm获取配置有6种方式，优先级由高到低"><a href="#npm获取配置有6种方式，优先级由高到低" class="headerlink" title="npm获取配置有6种方式，优先级由高到低"></a>npm获取配置有6种方式，优先级由高到低</h3><ol>
+<li>命令行参数。 <code>--proxy http://server:port</code>即将proxy的值设为<code>http://server:port</code>。</li>
+<li>环境变量。 以<code>npm_config_</code>为前缀的环境变量将会被认为是npm的配置属性。如设置proxy可以加入这样的环境变量<code>npm_config_proxy=http://server:port</code>。</li>
+<li>用户配置文件。可以通过<code>npm config get userconfig</code>查看文件路径。如果是mac系统的话默认路径就是<code>$HOME/.npmrc</code>。</li>
+<li>全局配置文件。可以通过<code>npm config get globalconfig</code>查看文件路径。mac系统的默认路径是<code>/usr/local/etc/npmrc</code>。</li>
+<li>内置配置文件。安装npm的目录下的npmrc文件。</li>
+<li>默认配置。 npm本身有默认配置参数，如果以上5条都没设置，则npm会使用默认配置参数。</li>
+</ol>
+<ul>
+<li>npm修改全局包安装路径</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">'X:\yourpath\nodejs\npm_global'</span></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">'X:\yourpath\nodejs\npm_cache'</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>针对npm配置的命令行操作</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> &lt;key&gt; &lt;value&gt; [--global]</span><br><span class="line">npm config get &lt;key&gt;</span><br><span class="line">npm config delete &lt;key&gt;</span><br><span class="line">npm config list</span><br><span class="line">npm config edit</span><br><span class="line">npm get &lt;key&gt;</span><br><span class="line">npm <span class="built_in">set</span> &lt;key&gt; &lt;value&gt; [--global]</span><br></pre></td></tr></table></figure>
+
+<p>在设置配置属性时属性值默认是被存储于用户配置文件中，如果加上<code>--global</code>，则被存储在全局配置文件中。</p>
+<p>如果要查看npm的所有配置属性（包括默认配置），可以使用<code>npm config ls -l</code>。</p>
+<p>如果要查看npm的各种配置的含义，可以使用<code>npm help config</code>。</p>
+<p><code>npm config edit</code>会将默认配置复制到目标配置文件，并用系统默认编辑器打开，让用户编辑。<code>npm config edit</code>可以进行<strong>用户配置</strong>，也可以进行<strong>全局配置</strong>（加<code>-g</code>选项）。</p>
+<blockquote>
+<p><strong>项目配置</strong>必须自己编辑<code>/path/to/my/project/.npmrc</code>文件</p>
+</blockquote>
+<ul>
+<li>为npm设置代理</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm config <span class="built_in">set</span> proxy http://username:password@server:port</span><br><span class="line">$ npm config <span class="built_in">set</span> https-proxy http://username:pawword@server:port</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>换源</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+
+<h1 id="use"><a href="#use" class="headerlink" title="use"></a>use</h1><h3 id="npm本地安装与全局安装有什么区别？"><a href="#npm本地安装与全局安装有什么区别？" class="headerlink" title="npm本地安装与全局安装有什么区别？"></a>npm本地安装与全局安装有什么区别？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install grunt // 本地安装，则是将模块下载到当前命令行所在目录。</span><br><span class="line">npm install -g grunt//全局安装，模块将被下载安装到【全局目录】中；</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用npm-init初始化项目"><a href="#使用npm-init初始化项目" class="headerlink" title="使用npm init初始化项目"></a>使用npm init初始化项目</h3><p>在node开发中使用npm init会生成一个pakeage.json文件，这个文件主要是用来记录这个项目的详细信息的，它会将我们在项目开发中所要用到的包，以及项目的详细信息等记录在这个项目中。方便在以后的版本迭代和项目移植的时候会更加的方便。也是防止在后期的项目维护中误删除了一个包导致的项目不能够正常运行。使用npm init初始化项目还有一个好处就是在进行项目传递的时候不需要将项目依赖包一起发送给对方，对方在接受到你的项目之后再执行npm install就可以将项目依赖全部下载到项目里。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">PS F:\MyBlog&gt; npm init</span><br><span class="line">This utility will walk you through creating a package.json file.</span><br><span class="line">It only covers the most common items, and tries to guess sensible defaults.</span><br><span class="line"></span><br><span class="line">See `npm help init` for definitive documentation on these fields</span><br><span class="line">and exactly what they do.</span><br><span class="line"></span><br><span class="line">Use `npm install &lt;pkg&gt;` afterwards to install a package and</span><br><span class="line">save it as a dependency in the package.json file.</span><br><span class="line"></span><br><span class="line">Press ^C at any time to quit.</span><br><span class="line">package name: (myblog)</span><br><span class="line">version: (1.0.0)</span><br><span class="line">description:</span><br><span class="line">entry point: (index.js)</span><br><span class="line">test command:</span><br><span class="line">git repository:</span><br><span class="line">keywords:</span><br><span class="line">author:</span><br><span class="line">license: (ISC)</span><br><span class="line">About to write to F:\MyBlog\package.json:</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  "name": "myblog",</span><br><span class="line">  "version": "1.0.0",</span><br><span class="line">  "description": "",</span><br><span class="line">  "main": "index.js",</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"</span><br><span class="line">  &#125;,</span><br><span class="line">  "author": "",</span><br><span class="line">  "license": "ISC"</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Is this OK? (yes)</span><br><span class="line">PS F:\MyBlog&gt;</span><br><span class="line">PS F:\MyBlog&gt;</span><br></pre></td></tr></table></figure>
+
+<p>package name:                      你的项目名字叫啥<br>version:                          版本号<br>description:                       对项目的描述<br>entry point:                      项目的入口文件（一般你要用那个js文件作为node服务，就填写那个文件）<br>test command:                     项目启动的时候要用什么命令来执行脚本文件（默认为node app.js）<br>git repository:                    如果你要将项目上传到git中的话，那么就需要填写git的仓库地址（这里就不写地址了）<br>keywirds：                       项目关键字（我也不知道有啥用，所以我就不写了）<br>author:                         作者的名字（也就是你叫啥名字）<br>license:                        发行项目需要的证书（这里也就自己玩玩，就不写了）</p>
+<h1 id="error"><a href="#error" class="headerlink" title="error"></a>error</h1><ul>
+<li>Error: EINVAL: invalid argument, mkdir ‘C:\Users\25433&#39;C:\Users\25433\AppData\Roaming\npm’’</li>
+</ul>
+]]></content>
+      <categories>
+        <category>web前端</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
 </search>
