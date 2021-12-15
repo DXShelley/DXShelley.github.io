@@ -9,6 +9,18 @@
       </tags>
   </entry>
   <entry>
+    <title>我的博客</title>
+    <url>/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>123</p>
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>tag4</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>npm配置与nodejs安装</title>
     <url>/2021/12/04/npm-and-nodejs/</url>
     <content><![CDATA[<h1 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h1><h1 id="npm-（Node-Packaged-Modules）"><a href="#npm-（Node-Packaged-Modules）" class="headerlink" title="npm （Node Packaged Modules）"></a>npm （Node Packaged Modules）</h1><h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><h3 id="npm从以下来源获取配置值，按优先级排序"><a href="#npm从以下来源获取配置值，按优先级排序" class="headerlink" title="npm从以下来源获取配置值，按优先级排序"></a>npm从以下来源获取配置值，按优先级排序</h3><h5 id="命令行标记"><a href="#命令行标记" class="headerlink" title="命令行标记"></a>命令行标记</h5><p>在命令行上放置<code>--foo bar</code>设置<code>foo</code>配置参数为<code>bar</code>。 一个 <code>--</code> 参数(argument)告诉cli解析器停止读取flags.一个 在命令行结尾的<code>--flag</code>参数(parameter)的值将会是<code>true</code>.</p>
@@ -48,7 +60,9 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
 
-<h1 id="use"><a href="#use" class="headerlink" title="use"></a>use</h1><h3 id="npm本地安装与全局安装有什么区别？"><a href="#npm本地安装与全局安装有什么区别？" class="headerlink" title="npm本地安装与全局安装有什么区别？"></a>npm本地安装与全局安装有什么区别？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install grunt // 本地安装，则是将模块下载到当前命令行所在目录。</span><br><span class="line">npm install -g grunt//全局安装，模块将被下载安装到【全局目录】中；</span><br></pre></td></tr></table></figure>
+<h1 id="use"><a href="#use" class="headerlink" title="use"></a>use</h1><h3 id="npm本地安装与全局安装有什么区别？"><a href="#npm本地安装与全局安装有什么区别？" class="headerlink" title="npm本地安装与全局安装有什么区别？"></a>npm本地安装与全局安装有什么区别？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install grunt // 本地安装，则是将模块下载到当前命令行所在目录。</span><br><span class="line">npm install -g grunt//全局安装，模块将被下载安装到【全局目录】中；</span><br><span class="line">【npm install xxx –save】 安装并写入package.json的”dependencies”中</span><br><span class="line">【npm install xxx –save-dev】安装并写入package.json的”devDependencies”中</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除依赖"><a href="#删除依赖" class="headerlink" title="删除依赖"></a>删除依赖</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">【npm uninstall xxx】删除xxx依赖</span><br><span class="line">【npm uninstall xxx -g】删除全局依赖xxx</span><br></pre></td></tr></table></figure>
 
 <h3 id="使用npm-init初始化项目"><a href="#使用npm-init初始化项目" class="headerlink" title="使用npm init初始化项目"></a>使用npm init初始化项目</h3><p>在node开发中使用npm init会生成一个pakeage.json文件，这个文件主要是用来记录这个项目的详细信息的，它会将我们在项目开发中所要用到的包，以及项目的详细信息等记录在这个项目中。方便在以后的版本迭代和项目移植的时候会更加的方便。也是防止在后期的项目维护中误删除了一个包导致的项目不能够正常运行。使用npm init初始化项目还有一个好处就是在进行项目传递的时候不需要将项目依赖包一起发送给对方，对方在接受到你的项目之后再执行npm install就可以将项目依赖全部下载到项目里。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">PS F:\MyBlog&gt; npm init</span><br><span class="line">This utility will walk you through creating a package.json file.</span><br><span class="line">It only covers the most common items, and tries to guess sensible defaults.</span><br><span class="line"></span><br><span class="line">See `npm help init` for definitive documentation on these fields</span><br><span class="line">and exactly what they do.</span><br><span class="line"></span><br><span class="line">Use `npm install &lt;pkg&gt;` afterwards to install a package and</span><br><span class="line">save it as a dependency in the package.json file.</span><br><span class="line"></span><br><span class="line">Press ^C at any time to quit.</span><br><span class="line">package name: (myblog)</span><br><span class="line">version: (1.0.0)</span><br><span class="line">description:</span><br><span class="line">entry point: (index.js)</span><br><span class="line">test command:</span><br><span class="line">git repository:</span><br><span class="line">keywords:</span><br><span class="line">author:</span><br><span class="line">license: (ISC)</span><br><span class="line">About to write to F:\MyBlog\package.json:</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  "name": "myblog",</span><br><span class="line">  "version": "1.0.0",</span><br><span class="line">  "description": "",</span><br><span class="line">  "main": "index.js",</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1"</span><br><span class="line">  &#125;,</span><br><span class="line">  "author": "",</span><br><span class="line">  "license": "ISC"</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Is this OK? (yes)</span><br><span class="line">PS F:\MyBlog&gt;</span><br><span class="line">PS F:\MyBlog&gt;</span><br></pre></td></tr></table></figure>
@@ -65,18 +79,6 @@
       <tags>
         <tag>nodejs</tag>
         <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的博客</title>
-    <url>/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>123</p>
-]]></content>
-      <categories>
-        <category>web前端</category>
-      </categories>
-      <tags>
-        <tag>tag4</tag>
       </tags>
   </entry>
   <entry>
