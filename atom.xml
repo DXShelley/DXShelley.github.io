@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dxshelley.github.io/"/>
-  <updated>2021-12-14T14:50:41.360Z</updated>
+  <updated>2021-12-15T14:35:14.952Z</updated>
   <id>https://dxshelley.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-github-搭建个人博客</title>
+    <link href="https://dxshelley.github.io/2021/12/15/hexo/"/>
+    <id>https://dxshelley.github.io/2021/12/15/hexo/</id>
+    <published>2021-12-15T14:15:55.000Z</published>
+    <updated>2021-12-15T14:35:14.952Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;hexo-github-搭建个人博客&quot;&gt;&lt;a href=&quot;#hexo-github-搭建个人博客&quot; class=&quot;headerlink&quot; title=&quot;hexo-github-搭建个人博客&quot;&gt;&lt;/a&gt;hexo-github-搭建个人博客&lt;/h1&gt;&lt;h2 id=&quot;基
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="https://dxshelley.github.io/categories/web/"/>
+    
+      <category term="framework" scheme="https://dxshelley.github.io/categories/web/framework/"/>
+    
+      <category term="hexo" scheme="https://dxshelley.github.io/categories/web/framework/hexo/"/>
+    
+    
+      <category term="npm" scheme="https://dxshelley.github.io/tags/npm/"/>
+    
+      <category term="hexo" scheme="https://dxshelley.github.io/tags/hexo/"/>
+    
+      <category term="建站" scheme="https://dxshelley.github.io/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>npm配置与nodejs安装</title>
@@ -45,33 +77,33 @@
   </entry>
   
   <entry>
-    <title>测试git</title>
+    <title>git</title>
     <link href="https://dxshelley.github.io/2020/09/24/%E6%B5%8B%E8%AF%95git/"/>
     <id>https://dxshelley.github.io/2020/09/24/%E6%B5%8B%E8%AF%95git/</id>
     <published>2020-09-24T01:55:40.000Z</published>
-    <updated>2021-12-14T13:43:35.269Z</updated>
+    <updated>2021-12-15T14:26:10.556Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;测试git&quot;&gt;&lt;a href=&quot;#测试git&quot; class=&quot;headerlink&quot; title=&quot;测试git&quot;&gt;&lt;/a&gt;测试git&lt;/h1&gt;&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目
+        &lt;h1 id=&quot;git&quot;&gt;&lt;a href=&quot;#git&quot; class=&quot;headerlink&quot; title=&quot;git&quot;&gt;&lt;/a&gt;git&lt;/h1&gt;&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目标&lt;/h2&gt;&lt;u
       
     
     </summary>
     
     
     
-      <category term="测试" scheme="https://dxshelley.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="git" scheme="https://dxshelley.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
-    <title>post</title>
+    <title>测试分类和标签使用</title>
     <link href="https://dxshelley.github.io/2020/02/06/web-framework-test/"/>
     <id>https://dxshelley.github.io/2020/02/06/web-framework-test/</id>
     <published>2020-02-06T09:51:50.000Z</published>
-    <updated>2021-12-14T13:43:56.679Z</updated>
+    <updated>2021-12-15T14:27:29.452Z</updated>
     
     <summary type="html">
     
@@ -88,35 +120,17 @@
   </entry>
   
   <entry>
-    <title>help</title>
-    <link href="https://dxshelley.github.io/2020/02/06/help/"/>
-    <id>https://dxshelley.github.io/2020/02/06/help/</id>
-    <published>2020-02-06T09:46:00.000Z</published>
-    <updated>2021-12-14T13:43:44.176Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-      <category term="测试" scheme="https://dxshelley.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>我的博客</title>
     <link href="https://dxshelley.github.io/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
     <id>https://dxshelley.github.io/2020/02/06/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-02-06T03:32:49.000Z</published>
-    <updated>2021-12-15T01:12:25.453Z</updated>
+    <updated>2021-12-15T14:24:47.846Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h1&gt;&lt;p&gt;123&lt;/p&gt;
-
+        &lt;h1 id=&quot;我的博客&quot;&gt;&lt;a href=&quot;#我的博客&quot; class=&quot;headerlink&quot; title=&quot;我的博客&quot;&gt;&lt;/a&gt;我的博客&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a
       
     
     </summary>
